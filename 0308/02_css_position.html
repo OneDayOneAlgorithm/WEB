@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    .big-box{
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    .bg-red{
+      background-color: red;
+    }
+    .bg-blue{
+      background-color: blue;
+    }
+    .position-rel{
+      position: relative;
+    }
+    .position-abs{
+      /* static 일때 위치 잡는 흐름에서 벗어남 */
+      /* static이 아닌 조상요소의 좌측상단으로 붙음*/
+      position: absolute;
+    }
+    .position-fixed{
+      position: fixed;
+    }
+    .position-sticky{
+      position: sticky;
+    }
+    /* 위에서 20px 만큼 아래로 이동 */
+    .top-20{
+      top: 20px;
+    }
+    /* 왼쪽기준 20px 이동 */
+    .left-20{
+      left: 20px;
+    }
+    .right-20{
+      right: 20px;
+    }
+    .bottom-20{
+      bottom: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="position-sticky top-20">
+    <div class="big-box bg-red position-abs">box1</div>
+    <div class="box bg-blue position-abs">box3</div>
+  </div>
+  <br>
+    <div class="box bg-blue position-rel">box2</div>
+    <span class="bg-red position-fixed right-20 bottom-20">inline1</span>
+    <span class="bg-red position-rel top-20 left-20">inline2</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolores totam? Provident qui deleniti eligendi, velit eum sit harum sunt minus cum iste suscipit atque mollitia ipsam laborum optio error.
+    Minima, fugit odit vitae saepe assumenda repellendus. Optio esse, accusamus, ipsam iusto voluptatibus obcaecati facilis cupiditate, officia quibusdam possimus dolorem. Facilis repellat dolore vel totam corporis impedit! Quam, quas omnis?
+    A aut doloribus ullam ipsam est commodi, dolor architecto repudiandae vitae pariatur cum ipsum repellendus at molestias reiciendis voluptates! Perferendis voluptatum nihil excepturi placeat molestiae illo assumenda esse optio rerum.
+    Accusantium, nemo, rerum omnis eum sequi, distinctio cum mollitia dolores saepe debitis corporis voluptatibus necessitatibus fuga quia quaerat voluptates! Rerum culpa necessitatibus obcaecati unde laborum odio nesciunt optio tempore excepturi?
+    Non, voluptate commodi incidunt, eius modi facilis, quod quam necessitatibus pariatur nostrum iure voluptatibus libero laborum quasi alias laboriosam vitae ipsum a cum molestiae totam? Tempora consequatur debitis aut corrupti?
+    Porro accusantium ea minus omnis amet, at quaerat totam quasi eligendi ab suscipit quae quis consequatur dolore perspiciatis voluptates laudantium dicta consequuntur. Laudantium dolor dolore autem debitis modi laboriosam repellendus?
+    Doloremque, labore quam omnis iste maiores optio deserunt iure architecto fuga aut beatae. Laudantium maiores nesciunt tenetur ipsam. Fugit nisi, rerum asperiores nostrum inventore eos unde nihil ducimus porro? Minima?
+    Suscipit magni, praesentium consequatur illum voluptatem facere voluptates sit veniam totam, iste, aperiam dolor beatae nesciunt facilis ullam at minus et consequuntur in deleniti placeat dignissimos dolore aliquam! Quas, tenetur!
+    Et beatae quae aliquam perferendis maxime ipsam magni earum voluptatem, vero quia officiis nam? Excepturi expedita aliquid similique, nihil iste eius, repellendus corrupti non ullam est culpa, recusandae doloribus. Iure?
+    Ratione praesentium tenetur ad fugiat est, corrupti illo? Amet laudantium voluptates asperiores et dolorem eligendi ut repudiandae id eos reprehenderit modi in, corrupti itaque porro molestiae voluptas veniam dicta dolore!</p>
+</body>
+</html>

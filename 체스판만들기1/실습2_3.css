@@ -1,0 +1,10 @@
+.board {
+  border: 2px solid black;
+  width: 800px;
+  height: 800px;
+}
+.mini {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
