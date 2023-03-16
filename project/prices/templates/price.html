@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    {% if  %}{% endif %}
+    {% if total %}
+    <h1>{{ thing }} {{ cnt }}개의 가격은 {{ total }}원 입니다.</h1>
+    {% else %}
+    <h1>{{ thing }}은/는 없어용</h1>
+    {% endif %}
+    
 </body>
 </html>
